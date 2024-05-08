@@ -2,7 +2,7 @@
 A theme for oh-my-zsh using gruvbox-like colors, with git status decorators
 There are multiple icons to choose from within the .zsh-theme file
 
-## This theme requires a nerd font, get one at [](https://www.nerdfonts.com/)
+**This theme requires a nerd font, get one at [https://www.nerdfonts.com/](https://www.nerdfonts.com/)**
 
 This is a heavy modification of the "strug" oh-my-zsh theme: https://github.com/triplepointfive/oh-my-zsh/blob/master/themes/strug.zsh-theme
 
