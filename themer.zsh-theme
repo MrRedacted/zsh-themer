@@ -37,7 +37,7 @@ function duskfox {
   PROMPT="%{$FG[183]%}╭─%n@%m %{$reset_color%}%{$FG[215]%}in %~%{$reset_color%}${git_branch} %{$FG[150]%}%D{%H:%M:%S}
 %{$FG[183]%}╰%{$FG[074]%}${icon}%{$reset_color%}"
 
-  ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[217]%}on "
+  ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[116]%}on "
   ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
   ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}%{$fg[red]%} ✘ %{$reset_color%}"
