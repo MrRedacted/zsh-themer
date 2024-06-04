@@ -34,8 +34,8 @@ local colorscheme='gruvbox'
 function duskfox {
   local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
 
-  PROMPT="%{$FG[074]%}╭─%n@%m %{$reset_color%}%{$FG[183]%}in %~%{$reset_color%}${git_branch} %{$FG[150]%}%D{%H:%M:%S}
-%{$FG[074]%}╰%{$FG[215]%}${icon}%{$reset_color%}"
+  PROMPT="%{$FG[215]%}╭─%n@%m %{$reset_color%}%{$FG[183]%}in %~%{$reset_color%}${git_branch} %{$FG[150]%}%D{%H:%M:%S}
+%{$FG[215]%}╰%{$FG[074]%}${icon}%{$reset_color%}"
 
   ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[116]%}on "
   ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
