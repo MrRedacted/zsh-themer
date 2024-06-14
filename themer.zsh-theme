@@ -27,7 +27,7 @@ local clang=' '
 
 ## CHANGE ICON HERE
 ## set to an icon variable from above or a custom icon
-local icon=$debian
+local icon=$glider
 
 local colorscheme='gruvbox'
 
