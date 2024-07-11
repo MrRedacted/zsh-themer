@@ -29,7 +29,7 @@ local clang=' '
 ## set to an icon variable from above or a custom icon
 local icon=$glider
 
-local colorscheme='catppuccin'
+local colorscheme='gruvbox'
 
 function duskfox {
   local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
