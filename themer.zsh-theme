@@ -80,18 +80,18 @@ function gruvbox {
 function catppuccin {
   local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
 
-  PROMPT="%{$FG[216]%}╭─%n@%m %{$reset_color%}%{$FG[183]%}in %~%{$reset_color%}${git_branch} %{$FG[111]%}%D{%H:%M:%S}
-%{$FG[216]%}╰%{$FG[116]%}${icon}%{$reset_color%}"
+  PROMPT="%{$FG[157]%}╭─%n@%m %{$reset_color%}%{$FG[229]%}in %~%{$reset_color%}${git_branch} %{$FG[111]%}%D{%H:%M:%S}
+%{$FG[157]%}╰%{$FG[216]%}${icon}%{$reset_color%}"
 
-  ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[223]%}on "
+  ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[116]%}on "
   ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
   ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}%{$fg[red]%} ✘ %{$reset_color%}"
   ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔ %{$reset_color%}"
 
   ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_DETAILED=true
-  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_PREFIX="%{$FG[183]%}("
-  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_SUFFIX="%{$FG[183]%})%{$reset_color%}"
+  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_PREFIX="%{$FG[229]%}("
+  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_SUFFIX="%{$FG[229]%})%{$reset_color%}"
 
   ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=" +"
   ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE_COLOR=%{$fg[green]%}
