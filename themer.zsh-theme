@@ -1,4 +1,4 @@
-## icon list
+## icon list (icons from Nerd Fonts)
 local glider='⠠⠵ '
 local lambda='λ '
 local debian=' '
@@ -24,6 +24,10 @@ local javascript=' '
 local bash=' '
 local html=' '
 local clang=' '
+local radio=' '
+local alma=' '
+local rocky=' '
+local plasma=' '
 
 ## CHANGE ICON HERE
 ## set to an icon variable from above or a custom icon
