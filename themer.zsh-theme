@@ -33,7 +33,7 @@ local plasma=' '
 ## set to an icon variable from above or a custom icon
 local icon=$glider
 
-local colorscheme='catppuccin_green'
+local colorscheme='kanagawa'
 
 function duskfox {
   local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
@@ -150,6 +150,29 @@ function catppuccin_blue {
   ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE_COLOR=%{$fg[red]%}
 }
 
+function kanagawa {
+  local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
+
+  PROMPT="%{$FG[150]%}╭─%n@%m %{$reset_color%}%{$FG[222]%}in %~%{$reset_color%}${git_branch} %{$FG[110]%}%D{%H:%M:%S}
+%{$FG[150]%}╰%{$FG[209]%}${icon}%{$reset_color%}"
+
+  ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[109]%}on "
+  ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+
+  ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}%{$fg[red]%} ✘ %{$reset_color%}"
+  ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔ %{$reset_color%}"
+
+  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_DETAILED=true
+  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_PREFIX="%{$FG[222]%}("
+  ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_SUFFIX="%{$FG[222]%})%{$reset_color%}"
+
+  ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=" +"
+  ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE_COLOR=%{$fg[green]%}
+
+  ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=" -"
+  ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE_COLOR=%{$fg[red]%}
+}
+
 case $colorscheme in
   'duskfox')
     duskfox
@@ -165,5 +188,8 @@ case $colorscheme in
     ;;
   'catppuccin_blue')
     catppuccin_blue
+    ;;
+  'kanagawa')
+    kanagawa
     ;;
 esac
