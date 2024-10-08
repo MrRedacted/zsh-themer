@@ -31,9 +31,9 @@ local plasma=' '
 
 ## CHANGE ICON HERE
 ## set to an icon variable from above or a custom icon
-local icon=$glider
+local icon=$radio
 
-local colorscheme='kanagawa'
+local colorscheme='gruvbox'
 
 function duskfox {
   local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
