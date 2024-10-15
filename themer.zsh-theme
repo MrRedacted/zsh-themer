@@ -33,7 +33,7 @@ local plasma=' '
 ## set to an icon variable from above or a custom icon
 local icon=$radio
 
-local colorscheme='gruvbox'
+local colorscheme='catppuccin_green'
 
 function duskfox {
   local git_branch='$(git_prompt_info)%{$reset_color%}$(git_remote_status)'
